@@ -32,7 +32,7 @@ nav {
 }
 
 h1, h2, h3 {
-    color: #d4af37;
+    color: #8b0000;
     text-shadow:
         0 0 4px rgba(212, 175, 55, 0.8),
         0 0 10px rgba(212, 175, 55, 0.6),
@@ -57,4 +57,15 @@ hr {
 .minister {
     padding: auto;
     margin: auto;
+}
+
+.minister h2 {
+    text-align: center;
+}
+
+.minister p {
+    max-width: 700px;
+    margin: 0 auto 1.5rem auto;
+    text-align: left;
+    line-height: 1.6;
 }
