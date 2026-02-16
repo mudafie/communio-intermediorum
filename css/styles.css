@@ -1,17 +1,18 @@
 body {
     background: 
-        linear-gradient(rgba(139, 0, 0, 0.6), rgba(15, 15, 15, 0.8)),
+        radial-gradient(circle at center, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.75) 85%),
+        linear-gradient(180deg, rgba(70, 0, 130, 0.55) 0%, rgba(139, 0, 0, 0.6) 40%, rgba(10, 10, 10, 0.9) 100%),
         url(../assets/F47FE7B8-EEC0-48B1-AEA1-37AE2CDE65B3.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    color: #a9a9a9;
+    color: #c9c9c9;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 a {
-    color: #a9a9a9;
+    color: #c9c9c9;
 }
 
 a:hover {
@@ -22,8 +23,21 @@ a:visited {
     color: #8b0000;
 }
 
+nav a {
+    text-shadow: 0 0 6px rgba(139, 0, 0, 0.7);
+}
+
 nav {
     text-align: center;
+}
+
+h1, h2, h3 {
+    color: #d4af37;
+    text-shadow:
+        0 0 4px rgba(212, 175, 55, 0.8),
+        0 0 10px rgba(212, 175, 55, 0.6),
+        0 0 18px rgba(139, 0, 0, 0.6);
+    letter-spacing: 1px;
 }
 
 #i {
