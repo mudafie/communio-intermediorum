@@ -1,12 +1,13 @@
-* {
+body {
     background-color: #0f0f0f;
     color: #a9a9a9;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
 }
 
 body::before {
     content: "";
-    position:absolute;
+    position: fixed;
     inset: 0;
     background-image: url(../assets/F47FE7B8-EEC0-48B1-AEA1-37AE2CDE65B3.png) center / cover no-repeat;
     opacity: 0.4;
@@ -26,7 +27,6 @@ a:visited {
 }
 
 nav {
-    background-color: #0f0f0f;
     text-align: center;
 }
 
