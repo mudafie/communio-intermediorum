@@ -3,10 +3,10 @@ body {
         radial-gradient(circle at center, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.75) 85%),
         linear-gradient(180deg, rgba(70, 0, 130, 0.55) 0%, rgba(139, 0, 0, 0.6) 40%, rgba(10, 10, 10, 0.9) 100%),
         url(../assets/F47FE7B8-EEC0-48B1-AEA1-37AE2CDE65B3.png);
-    background-size: cover;
-    background-position: center;
+    background-size: cover, cover auto 100%;
+    background-position: center, center, top center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed, fixed, scroll;
     color: #c9c9c9;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -38,6 +38,16 @@ h1, h2, h3 {
         0 0 10px rgba(212, 175, 55, 0.6),
         0 0 18px rgba(139, 0, 0, 0.6);
     letter-spacing: 1px;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #8b0000, transparent);
+    box-shadow: 
+        0 0 6px rgba(139, 0, 0, 0.8),
+        0 0 12px rgba(139, 0, 0, 0.6);
+    margin: 2rem 0;
 }
 
 #i {
