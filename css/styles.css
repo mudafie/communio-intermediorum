@@ -16,7 +16,7 @@ a {
 }
 
 a:hover {
-    color: #dc143c;
+    color: #d3af37;
 }
 
 a:visited {
@@ -32,7 +32,7 @@ nav {
 }
 
 h1, h2, h3 {
-    color: #8b0000;
+    color: #d3af37;
     text-shadow:
         0 0 4px rgba(212, 175, 55, 0.8),
         0 0 10px rgba(212, 175, 55, 0.6),
