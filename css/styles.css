@@ -1,0 +1,22 @@
+* {
+    background-color: #0f0f0f;
+    color: #a9a9a9;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a {
+    color: #a9a9a9;
+}
+
+a:hover {
+    color: #dc143c;
+}
+
+a:visited {
+    color: #8b0000;
+}
+
+nav {
+    background-color: #0f0f0f;
+    text-align: center;
+}
