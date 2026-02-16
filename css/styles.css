@@ -4,6 +4,23 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+body {
+    content: "";
+    position:absolute;
+    inset: 0;
+    background-image: url(../assets/F47FE7B8-EEC0-48B1-AEA1-37AE2CDE65B3.png) center / cover no-repeat;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+.minister {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 a {
     color: #a9a9a9;
 }
@@ -21,6 +38,11 @@ nav {
     text-align: center;
 }
 
-.i {
+#i {
     font-style: italic;
+}
+
+.minister {
+    padding: auto;
+    margin: auto;
 }
