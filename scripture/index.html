@@ -14,7 +14,11 @@ permalink: /scripture/
     {% for t in order %}
         {% assign g = groups | where: "name", t | first %}
         {% if g %}
-            <h2>{{ t | capitalize }}s</h2>
+            {% if t == "commentary" %}
+                <h2>Commentaries</h2>
+            {% else %}
+                <h2>{{ t | capitalize }}s</h2>
+            {% endif %}
             <ul>
                 {% assign items = g.items | sort: "order" %}
                 {% for item in items %}
