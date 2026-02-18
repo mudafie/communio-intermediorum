@@ -32,7 +32,7 @@ permalink: /scripture/
                 {% assign sermons = site.scripture | sort: "title" %}
                 {% for s in sermons %}
                     <li><a href="{{ s.url | relative_url }}">{{ s.title }}</a></li>
-                {% end for %}
+                {% endfor %}
             </ul>
         </main>
     </body>
