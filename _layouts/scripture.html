@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Sacred Texts</title>
+        <link rel="stylesheet" href="{{ '/css/styles.css' | relative_url }}">
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ '/favicon/apple-touch-icon.png' | relative_url }}">
+        <link rel="icon" type="image/png" sizes="32x32" href="{{ '/favicon/favicon-32x32.png' | relative_url }}">
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ '/favicon/favicon-16x16.png' | relative_url }}">
+        <link rel="manifest" href="{{ '/favicon/site.webmanifest' | relative_url }}">
+    </head>
+    <body>
+        <header>
+            <nav id="nav" width="100%">
+                <h1>The Sacred Texts</h1>
+                <a href="{{ '/' | relative_url }}">Home</a>
+                <a href="{{ '/about/' | relative_url }}">About</a>
+                <a href="{{'/scripture/' | relative_url}}">Contact</a>
+            </nav>
+        </header>
+        <main>
+            {{ content }}
+        </main>
+    </body>
+</html>
