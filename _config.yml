@@ -8,5 +8,5 @@ defaults:
   - scope:
     path: ""
     type: scripture
-    values:
+  values:
     layout: default
