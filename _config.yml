@@ -5,8 +5,8 @@ collections:
     output: true
 
 defaults:
-  -  scope:
+  - scope:
       path: ""
       type: scripture
-     values:
+    values:
       layout: default
