@@ -2,7 +2,7 @@
 
 title: Sermon I
 permalink: /scripture/sermon-i/
-layout: default
+layout: scripture
 
 ---
 
