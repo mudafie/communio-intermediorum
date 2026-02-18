@@ -1,0 +1,12 @@
+title: Communio Intermediorum
+
+collections:
+  scripture:
+    output: true
+
+defaults:
+  - scope:
+    path: ""
+    type: scripture
+    values:
+    layout: default
