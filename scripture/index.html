@@ -9,7 +9,7 @@ permalink: /scripture/
 <ul>
     {% assign groups = site.scripture | where_exp: "d", "d.type" | group_by: "type" %}
 
-    {% assign order - "sermon,epistle,commentary" | split: "," %}
+    {% assign order = "sermon,epistle,commentary" | split: "," %}
 
     {% for t in order %}
         {% assign g = groups | where: "name", t | first %}
@@ -35,7 +35,7 @@ permalink: /scripture/
             <ul>
                 {% assign items = g.items | sort: "order" %}
                 {% for item in items %}
-                    <li><a href="{{ item.url | relative_url }}"></a></li>
+                    <li><a href="{{ item.url | relative_url }}">{{ item.title}}</a></li>
                 {% endfor %}
             </ul>
             <hr>
