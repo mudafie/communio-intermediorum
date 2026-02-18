@@ -7,8 +7,38 @@ permalink: /scripture/
 ---
 
 <ul>
-    {% assign sermons = site.scripture | sort: "title" %}
-    {% for s in sermons %}
-        <li><a href="{{ s.url | relative_url }}">{{ s.title }}</a></li>
+    {% assign groups = site.scripture | where_exp: "d", "d.type" | group_by: "type" %}
+
+    {% assign order - "sermon,epistle,commentary" | split: "," %}
+
+    {% for t in order %}
+        {% assign g = groups | where: "name", t | first %}
+        {% if g %}
+            <h2>{{ t | capitalize }}s</h2>
+            <ul>
+                {% assign items = g.items | sort: "order" %}
+                {% for item in items %}
+                    <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+                {% endfor %}
+            </ul>
+            <hr>
+        {% endif %}
+    {% endfor %}
+
+    {% comment %}
+    Anything with an unexpected type goes here (optional safety net).
+    {% endcomment %}
+    {% assign known = order %}
+    {% for g in groups %}
+        {% unless known contains g.name %}
+            <h2>{{ g.name | capitalize }}</h2>
+            <ul>
+                {% assign items = g.items | sort: "order" %}
+                {% for item in items %}
+                    <li><a href="{{ item.url | relative_url }}"></a></li>
+                {% endfor %}
+            </ul>
+            <hr>
+        {% endunless %}
     {% endfor %}
 </ul>
