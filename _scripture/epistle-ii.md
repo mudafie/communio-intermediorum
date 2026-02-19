@@ -29,8 +29,8 @@ We put a label on this existence, and disclaim all other labels. But there canno
 
 Take from this what you will, but if it be anything, I pray it be this: your conscious existence is all you will ever have. Do not squander it. If it has no inherent meaning, make one. You are the champion of your history. Act like it.
 
-With grace and the blessings of the Unknown,
-I remain,
+With grace and the blessings of the Unknown,\n\n
+I remain,\n\n
 QPVRev. Sean
 
 
